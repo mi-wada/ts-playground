@@ -1,0 +1,25 @@
+{
+  "name": "ts-playground",
+  "version": "1.0.0",
+  "description": "This is a playground for experimenting with TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mi-wada/ts-playground.git"
+  },
+  "keywords": [],
+  "author": "mi-wada",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/mi-wada/ts-playground/issues"
+  },
+  "homepage": "https://github.com/mi-wada/ts-playground#readme",
+  "devDependencies": {
+    "@types/node": "22.15.21",
+    "typescript": "5.8.3"
+  }
+}
