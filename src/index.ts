@@ -1,15 +1,3 @@
-import * as readline from "node:readline";
+import { add } from "./calc.js";
 
-const greet = (name: string): string => {
-	return `Hello, ${name}!`;
-};
-
-const rl = readline.createInterface({
-	input: process.stdin,
-	output: process.stdout,
-});
-
-rl.question("Enter your name: ", (name) => {
-	console.log(greet(name));
-	rl.close();
-});
+console.log(add(2, 3));
