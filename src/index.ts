@@ -1,17 +1,9 @@
-type MyFunc = {
-	isUsed: boolean;
-	(arg: number): void;
-	(arg: string): void;
-};
-
-const double: MyFunc = (arg: number | string) => {
-	if (typeof arg === "number") {
-		console.log(arg * 2);
-	} else {
-		console.log(arg.repeat(2));
+const map = <T, R>(arr: T[], fn: (i: T) => R): R[] => {
+	const ret = [];
+	for (const n of arr) {
+		ret.push(fn(n));
 	}
+	return ret;
 };
-double.isUsed = true;
 
-double(2); // 4
-double("Hi"); // HiHi
+console.log(map([1, 2, 3], (i) => i > 1));
