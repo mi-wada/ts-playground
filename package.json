@@ -24,8 +24,8 @@
 	"homepage": "https://github.com/mi-wada/ts-playground#readme",
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@types/node": "22.15.21",
+		"@types/node": "24.0.1",
 		"typescript": "5.8.3",
-		"vitest": "3.1.4"
+		"vitest": "3.2.3"
 	}
 }
