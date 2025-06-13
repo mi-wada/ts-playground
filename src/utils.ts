@@ -6,10 +6,10 @@ export function None<T>(): Option<T> {
 	return { kind: "none" };
 }
 
-export type Result<T, E> = { kind: "ok"; value: T } | { kind: "err"; error: E };
+export type Result<T, E> = { ok: true; value: T } | { ok: false; error: E };
 export function Ok<T, E = never>(value: T): Result<T, E> {
-	return { kind: "ok", value };
+	return { ok: true, value };
 }
 export function Err<T = never, E = unknown>(error: E): Result<T, E> {
-	return { kind: "err", error };
+	return { ok: false, error };
 }
